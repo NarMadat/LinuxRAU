@@ -1,10 +1,10 @@
 CXX = g++
 CXXFLAGS = -Wall -std=c++20
 
-all: task_2
+all: Complex_operations
 
-task_2: main.o complex.o sort.o
-	$(CXX) $(CXXFLAGS) -o task_2 main.o complex.o sort.o
+Complex_operations: main.o complex.o sort.o
+	$(CXX) $(CXXFLAGS) -o Complex_operations main.o complex.o sort.o
 
 
 main.o: main.cpp complex.h sort.h
@@ -17,7 +17,7 @@ sort.0: sort.cpp sort.h complex.h
 	$(CXX) $(CXXFLAGS) -c sort.cpp
 
 clean:
-	rm -f *.o task_2
+	rm -f *.o Complex_operations
 
 
 
