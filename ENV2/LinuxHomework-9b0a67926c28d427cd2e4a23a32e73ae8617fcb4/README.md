@@ -1,1 +1,0 @@
-Homework from Narek Madatyan
