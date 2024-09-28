@@ -1,1 +1,1 @@
-This is a simple README, please dont read this README. Thank`s!
+This is a simple README, please don't read this README. Thank`s!
