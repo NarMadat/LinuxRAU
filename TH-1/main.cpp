@@ -5,6 +5,8 @@
 #include <cstdlib>
 #include <chrono>
 
+
+
 void* compute_partial_sum(void* arg) {
     auto* data = static_cast<std::pair<const std::vector<int>*, std::pair<size_t, size_t>>*>(arg);
     const auto& array = *data->first;
