@@ -2,7 +2,6 @@ NAME = array-summary
 SRC = main.cpp
 OBJ = main.o
 GCC = g++
-
 all: $(NAME)
 
 $(NAME) : $(OBJ)
