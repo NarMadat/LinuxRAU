@@ -24,10 +24,10 @@ int main(int argc, char* argv[]) {
     std::vector<int> array(N);
     for (size_t i = 0; i < N; ++i) array[i] = std::rand() % 100;
 
-    auto start_time = std::chrono::high_resolution_clock::now();
+    auto start_time = std::chrono::high_resolution_clock::now(); // sksvec 1
     long long sum_without_threads = std::accumulate(array.begin(), array.end(), 0LL);
-    auto end_time = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> duration_without_threads = end_time - start_time;
+    auto end_time = std::chrono::high_resolution_clock::now(); // prcav 1
+    std::chrono::duration<double> duration_without_threads = end_time - start_time; // DWT 
 
     start_time = std::chrono::high_resolution_clock::now();
     std::vector<pthread_t> threads(M);
