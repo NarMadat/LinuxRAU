@@ -52,8 +52,8 @@ int main(int argc, char* argv[]) {
     end_time = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> duration_with_threads = end_time - start_time;
 
-    std::cout << "Time spent without threads: " << duration_without_threads.count() << " seconds\n";
-    std::cout << "Time spent with " << M << " threads (pthread): " << duration_with_threads.count() << " seconds\n";
+    std::cout << "time arandz thread " << duration_without_threads.count() << " seconds\n";
+    std::cout << "time thredov" << M << " threads " << duration_with_threads.count() << " varkyan\n";
 
     return 0;
 }
